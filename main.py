@@ -1,10 +1,7 @@
 import time
 from random import choice
 from string import printable
-all_characters = list(printable)
-num = len(all_characters)
-num_one = num - 5
-all_characters = all_characters[:num_one]
+all_characters = list(printable)[:-6]
 status = False
 while not status:
     length_pass = int(input('Введите длину пароля: '))
